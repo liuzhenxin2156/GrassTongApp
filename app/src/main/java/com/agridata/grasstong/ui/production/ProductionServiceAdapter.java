@@ -17,7 +17,7 @@ import java.util.List;
  * @ProjectName : Test
  * @Author :
  * @Time : 2021/6/3 13:45
- * @Description :
+ * @Description : 适配器
  */
 public class ProductionServiceAdapter extends BaseRecyclerViewAdapter<GrassBean, BaseRecyclerViewHolder> {
     final  private List<GrassBean> mDates;
