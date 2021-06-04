@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_ll"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_48">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/view_space_4"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/view_space_10"
+            android:src="@drawable/back_iv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="账号与安全"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/line_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_size_0.5"
+        android:layout_below="@+id/toolbar_ll"
+        android:background="@color/diver_bg" />
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/line_rl"
+        android:layout_below="@+id/line_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_change_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height_54"
+            android:background="@drawable/selector_bottom_item_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="修改密码"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/text_size_18" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_arrow_right_grey" />
+
+        </LinearLayout>
+
+        <View
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/space_bg"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_change_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bottom_item_bg"
+            android:dividerPadding="@dimen/view_space_18"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height_54"
+                android:background="@drawable/selector_bottom_item_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/view_space_16"
+                android:paddingRight="@dimen/view_space_16">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/modify_user_info"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/text_size_18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_right_grey" />
+            </LinearLayout>
+
+            <View
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_size_0.5"
+                android:layout_marginLeft="@dimen/view_space_16"
+                android:background="@color/diver_bg"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bottom_item_bg"
+            android:dividerPadding="@dimen/view_space_18"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height_54"
+                android:background="@drawable/selector_bottom_item_bg"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/view_space_16"
+                android:paddingRight="@dimen/view_space_16">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/logout_account_number"
+                    android:textColor="@color/color_3"
+                    android:textSize="@dimen/text_size_18" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/ic_arrow_right_grey" />
+            </LinearLayout>
+            <View
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_size_0.5"
+                android:layout_marginLeft="@dimen/view_space_16"
+                android:background="@color/diver_bg"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

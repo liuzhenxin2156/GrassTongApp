@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_self_report_bg"
+    android:gravity="center"
+    android:id="@+id/card_view_all">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_marginBottom="@dimen/view_space_6"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_record"
+            android:layout_marginTop="@dimen/view_space_10"
+            android:layout_width="@dimen/view_space_38"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/view_space_38"/>
+        <TextView
+            android:id="@+id/tv_record"
+            android:layout_below="@+id/iv_record"
+            android:layout_width="wrap_content"
+            tools:text ="沙克打瞌睡题"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/view_space_6"
+            android:textSize="14sp"
+            android:textStyle="bold"
+
+            android:textColor="@color/color_6"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

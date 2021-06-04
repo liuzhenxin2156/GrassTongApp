@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/view_space_12"
+    android:layout_marginRight="@dimen/view_space_12"
+    android:background="@drawable/shape_border_white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/view_space_26"
+        android:layout_marginRight="@dimen/view_space_26"
+        android:layout_marginTop="@dimen/view_space_26"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/view_space_16"
+            android:text="用户协议与隐私政策"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/content_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:text="132324"
+                android:layout_marginBottom="@dimen/view_space_12"
+                android:textColor="@color/color_3"
+                android:textSize="@dimen/text_size_14"
+                />
+        </ScrollView>
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E7E7E7" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height_48"
+            android:gravity="right|bottom"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/view_space_8"
+            >
+            <TextView
+                android:id="@+id/negative_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/view_space_18"
+                android:background="@drawable/selector_bottom_item_bg"
+                android:text="不同意"
+                android:padding="@dimen/view_height_8"
+                android:textColor="@color/C4"
+                android:textSize="@dimen/text_size_16"
+                />
+            <TextView
+                android:padding="@dimen/view_height_8"
+                android:id="@+id/positive_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_bottom_item_bg"
+                android:text="同意并继续"
+                android:textColor="@color/C4"
+                android:textSize="@dimen/text_size_16"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

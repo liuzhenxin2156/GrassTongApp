@@ -1,0 +1,241 @@
+<resources>
+    <string name="app_name">牧草通</string>
+    <string name="register">注册</string>
+    <string name="user_name">姓名</string>
+    <string name="id_card_num">身份证号码</string>
+    <string name="phone_num">手机号码</string>
+    <string name="title_home">首页</string>
+    <string name="title_mine">我的</string>
+    <string name="about_garss_tong">关于牧草通</string>
+    <string name="app_version">牧草通v%1$s</string>
+
+    <string name="please_input_new_pwd_forget">请输入新密码</string>
+    <string name="please_input_new_pwd_forget1">请再次确认新密码</string>
+    <string name="please_input_new_pwd_forget2">两次密码输入不一致</string>
+    <string name="set_pwd_hint_tv">密码为6-20位,至少含数字/字母/字符两种组合(不能使用空格、中文、非法字符)</string>
+    <string name="set_new_pwd">设置新密码</string>
+    <string name="please_enter_password">请输入密码</string>
+
+    <string name="please_enter_password_again"> 请再次输入密码</string>
+
+    <string name="isok">确认</string>
+    <string name="isno">取消</string>
+
+    <string name="permissions_error_message">获取权限失败，请手动开启</string>
+    <string name="show_privacy_message">"尊敬的牧草通用户：
+您好!
+　　感谢您对本公司的支持!本公司非常重视您的个人信息和隐私保护。"
+                "为了更好地保障您的个人权益，在您使用我们的产品前，"
+                "请务必审慎阅读《隐私政策》和《用户协议》内的所有条款，"
+                "尤其是:\n"
+                " 1.我们对您的个人信息的收集/保存/使用/对外提供/保护等规则条款，以及您的用户权利等条款;\n"
+                " 2. 约定我们的限制责任、免责条款;\n"
+                " 3.其他以颜色或加粗进行标识的重要条款。\n"
+                "您点击“同意并继续”的行为即表示您已阅读完毕并同意以上协议的全部内容。"
+                "如您同意以上协议内容，请点击“同意”，开始使用我们的产品和服务!"</string>
+    <string name="welcome_show_message">欢迎来到</string>
+    <string name="welcome_show_tips_message">认准这颗星 吃肉更放心</string>
+    <string name="login_message">登录</string>
+    <string name="now_registered">没有账号？立即注册</string>
+    <string name="hint_phone_num">请输入手机号码</string>
+    <string name="hint_password_num">请输入密码</string>
+    <string name="verification_login">验证码登录</string>
+    <string name="forgot_password">忘记密码</string>
+    <string name="other_login_type">其他登录方式</string>
+    <string name="wx_login_success">微信登录成功</string>
+    <string name="address_message">省>市>区/县</string>
+    <string name="phone_num_message">手机号</string>
+    <string name="set_login_pwd">设置登录密码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="sms_time">%1$ss后重新发送</string>
+    <string name="retry_for_valid_code">重新获取</string>
+    <string name="verification_code">验证码</string>
+    <string name="address_et">区域</string>
+    <string name="offeree_type">相对人类型</string>
+
+
+    <string name="please_enter_name">请输入姓名</string>
+    <string name="please_enter_idcard">请输入身份证号</string>
+    <string name="please_enter_ver_code">请输入验证码</string>
+    <string name="please_enter_pwd">请输入密码，已便您的登录</string>
+    <string name="please_enter_info">请输完整信息</string>
+    <string name="please_enter_sure_phone_num">请输入正确的手机号</string>
+    <string name="please_enter_phone_num">请输入手机号</string>
+    <string name="phone_num_error">手机号格式有误</string>
+
+    <string name="perfect_information">完善信息</string>
+    <string name="kill_app">再按一次返回键退出</string>
+    <string name="success">修改成功~</string>
+    <string name="updata_info">更改信息</string>
+    <string name="file_size_cannot_exceed_10M">文件大小不能超过10M!</string>
+    <string name="start_competence">请您开启读写权限!</string>
+    <string name="start_permissions_cream">请您开启相机权限!</string>
+
+    <string name="select_from_album">从相册选取</string>
+    <string name="take_pictures">拍照</string>
+    <string name="setting">设置</string>
+    <string name="feedback">意见反馈</string>
+
+    <string name="confirm_exit_login">确定要退出登录吗？</string>
+    <string name="logout">确定要注销账号吗？
+    永久注销，无法登录!
+     所有数据将无法找回！</string>
+    <string name="notice_content">所有发给用户的通告只会通过猪哥亮客户端的公告栏公告发布。服务条款的修改、服务变更、或其它重要事件的通告都会以此形式进行。</string>
+
+    <string name="user_agreement">用户协议</string>
+    <string name="privacy_policy">隐私政策</string>
+    <string name="modify_user_info">修改信息</string>
+    <string name="logout_account_number">注销账号</string>
+    <string name="sign_out">退出登录</string>
+
+    <string name="phone_number_format_is_wrong">手机号格式有误</string>
+
+    <string name="next_btn">下一步</string>
+    <string name="start_read_whrie_permission">请开启读写权限!</string>
+    <string name="not_yet_open">暂未开放</string>
+
+    <!-- 生猪车辆运输备案 -->
+    <string name="pig_vehicle_transportation_record">生猪车辆运输备案</string>
+    <string name="no_information_please_add">暂无信息，请添加</string>
+    <string name="vehicle_owner_type">车辆所有者类型*</string>
+    <string name="carrier_s_area">承运人所在区域*</string>
+    <string name="owner_name">所有者名称*</string>
+    <string name="type_of_transportation">运输种类*</string>
+    <string name="carrying_capacity">运载量*</string>
+    <string name="number_plate">车牌号*</string>
+    <string name="license_plate_color">车牌颜色*</string>
+    <string name="transport_scope">运输范围*</string>
+    <string name="vehicle_brands">车辆品牌*</string>
+    <string name="vehicle_model">车辆型号*</string>
+    <string name="vehicle_color">车辆颜色*</string>
+    <string name="id_card_business_license_number">身份证/工商营业许可证号*</string>
+    <string name="road_transport_business_license_number">道路运输经营许可证号*</string>
+    <string name="motor_vehicle_license_number">机动车行驶证号*</string>
+    <string name="vehicle_operating_certificate_number">车辆运营证号*</string>
+    <string name="approved_maximum_load">核定最大运载量*</string>
+    <string name="more_5m_photos_upload_slowly_please_be_patient">大于5M照片上传较慢请耐心等待</string>
+    <string name="upload_id_card_business_license_number">上传身份证/营业执照照片</string>
+
+    <string name="helloworld">&#xae;</string>
+
+    <string name="dialog_msg">1.支持Android M N O P Q\n2.支持自定义下载过程\n3.支持 设备>=Android M 动态权限的申请\n4.支持通知栏进度条展示\n5.支持文字国际化</string>
+
+    <string name="common_arror_right">></string>
+
+    <string name="pickerview_year">年</string>
+    <string name="pickerview_month">月</string>
+    <string name="pickerview_day">日</string>
+    <string name="pickerview_hours">时</string>
+    <string name="pickerview_minutes">分</string>
+    <string name="pickerview_seconds">秒</string>
+
+    <string name="select_one_eartag">请选择一个耳标</string>
+
+    <string name="select_from_gallery">从相册选择</string>
+    <string name="take_photo">拍照</string>
+    <string name="tag_key_translation_z">translation_z</string>
+
+    <string name="insurance_details">&#12288;&#12288;在保险期间内，由于发生疫病，区(县)级及以上政府在保险期间内发布命令对该地区生猪进行强制扑杀导致保险生猪死亡的，视为保险事故发生，保险人按照保险合同的约定负责赔偿。区(县)级及以上政府扑杀命令发布日期具体以该政府文件落款日期为准。</string>
+    <string name="insurance_standard">6元/头（保额500元）、12元/头（保额1000元）</string>
+    <string name="within_insurance">保险生猪自本保险期间起始之日起十五日内（含）为保险生猪的疾病观察期。在观察期内，由于发生疫病导致保险生猪被扑杀造成死亡的，保险人不承担赔偿责任，但可退还死亡保险标的对应保险费。</string>
+    <string name="consumer_phone">95511</string>
+
+    <string name="transport_details_special_tips">1.本保险合同承担生猪、仔猪在运输途中因非疾病导致的死亡责任。\n2.出险时需提供生猪、仔猪无害化处理证明，如无此证明将不承担保险责任。\n3.	本保单约定每头生猪赔偿限额为人民币3000元，每头仔猪赔偿限额为人民币1500元。\n4.	告知：公司2019年4季度综合偿付能力充足率为207.87%，最近风险综合评级（分类监管）被评定为A级，符合监管要求，请知悉。</string>
+
+    <string name="transport_within_insurance">自动物检疫合格证注明的出发地离开时起，运至动物检疫合格证注明的接收目的地终止，最长不超过检疫合格证注明的有效时间。</string>
+    <string name="tips_content">1.验标资料包含猪舍外观照片；\n2.猪场外观照片；\n3.猪舍内部对角照片（含猪）2–3张;\n4.总数量不少于4张 </string>
+
+    <string name="culling_notice">一、保费计算\n保费=每头保险金额×保险数量×基准费率
+        二、保险责任\n
+在保险期间内，由于发生疫病，区(县)级及以上政府在保险期间内发布命令对该地区生猪进行强制扑杀导致保险生猪死亡的，视为保险事故发生，保险人按照保险合同的约定负责赔偿。区(县)级及以上政府扑杀命令发布日期具体以该政府文件落款日期为准。
+\n三、责任免除
+\n【原因除外】下列原因造成保险生猪死亡的，保险人不负责赔偿：
+\n（一）投保人或其家庭成员、被保险人或其家庭成员、投保人或被保险人雇佣人员的故意行为或重大过失行为；
+\n（二）除了政府因疫病扑杀以外的行政行为或司法行为；
+\n（三）保险生猪未按免疫程序接种、未按照国家相关规定对病死生猪进行无害化处理或患染疾病后，投保人、被保险人隐瞒疫情不向动物防疫部门报告又未采取有效的减灾措施；
+\n（四）除政府强制扑杀以外的其他原因导致保险生猪死亡的。
+\n【损失除外】下列损失、费用，保险人也不负责赔偿：
+\n（一）保险期间开始前政府强制扑杀所导致的保险生猪死亡；
+\n（二）保险生猪在保险合同约定的养殖地点以外所发生的死亡；
+\n（三）本保险保险金额加上其他同类政策性保险保险金额与政府扑杀补贴金额后总额超过保险标的市场价值的部分；
+\n（四）观察期内的政府强制扑杀，但因受非标的养殖企业影响造成以该非标的养殖企业为中心向周围辐射3公里导致的扑杀除外。
+\n【其他除外】其他不属于本保险合同责任范围内的损失、费用，保险人也不负责赔偿。</string>
+    <string name="insurance_notice">1.  本保单承保以下货物：
+\n主要包括但不限于以下货物：生猪、仔猪
+
+\n2.   如您选择投保，表示确认投保人以及车辆所有人同意购买且认可保险金额。
+
+\n3.   本保险合同承担生猪、仔猪在运输途中因非疾病导致的死亡责任。
+
+\n4.   出险时需提供生猪、仔猪无害化处理证明，如无此证明将不承担保险责任。
+
+\n5.   本保单约定每头生猪赔偿限额为人民币3000元，每头仔猪赔偿限额为人民币1500元。
+
+\n6.   本产品通过互联网在全国范围内销售。
+
+\n7.   本保险目前采用电子保单形式承保，小规模纳税人和个人客户只提供电子发票。如需电子发票，请拨打客服电话。一般纳税人如需要纸质发票，请拨打客服电话，若需寄送，邮费将由您自行承担。
+
+\n8.责任免除：
+
+\n第一条 由于下列原因造成保险标的的损失和费用，保险人不负责赔偿：
+
+\n（一）地震、海啸；
+
+\n（二）核辐射、核爆炸、核污染、放射性污染、大气污染、土地污染及其他各种污染；
+
+\n（三）行政行为或司法行为；
+
+\n（四）战争、敌对行为、军事行为、武装冲突、罢工、骚乱、暴动、恐怖活动；
+
+\n（五）属于发货人责任引起的损失；在保险责任开始前，保险标的已存在品质不良或数量短少所形成的损失；包装不善；
+
+\n（六）保险标的的自然损耗、本质缺陷，市价跌落；
+
+\n（七）盗窃、抢劫、哄抢行为；
+
+\n（八）投保人、被保险人的故意、重大过失或违法行为；
+
+\n（九）疾病、怀仔、防疫注射或接种。
+
+\n第二条 下列损失和费用，保险人不负责赔偿：
+
+\n（一）无论任何原因引起的运输延迟所导致的货物损失；
+
+\n（二）罚款、罚金、惩罚性赔偿、精神损害赔偿及其他各种间接损失；
+
+\n（三）本合同中载明的每次事故免赔额或按照本合同中载明的每次事故免赔率计算的每次事故免赔额。
+
+\n第三条 若采用定额保险方式承保，下列情形下发生的损失和费用，保险人也不负责赔偿：
+
+\n（一）不符合专业及安全运输要求；
+
+\n（二）驾驶人员酒后驾车、无有效驾驶证驾驶，承运汽车无有效行驶证、未经检验或检验不合格。
+
+\n第四条 其他不属于保险责任范围内的损失和费用，保险人不负责赔偿。
+
+\n9.如您还有任何疑问，请拨打中路财产保险股份有限公司客服热线400-900-1234进行咨询。
+
+\n10.投保人承诺：
+
+本人已认真阅读并完全同意以下所有内容:
+
+\n&#12288;&#12288;&#12288;&#12288;（1）  本人已认真阅读、理解并接受了本次投保你公司提供的投保须知、保险条款的内容，特别是保险责任、免除保险责任的条款、等待期、犹豫期、续保、解除合同规定及相关金额。本人确认所投保的产品及选择的保险金额和保险期间适合本人；
+
+\n&#12288;&#12288;&#12288;&#12288;（2）  本人依法履行如实告知义务。本次投保所填写各项内容均属实，若有隐瞒或告知不实，你公司有权依法解除保险合同，对于合同解除前发生的任何事故，你公司可不承担任何责任；
+
+\n&#12288;&#12288;&#12288;&#12288;（3）  本人同意你公司所负保险责任以所签发保险单为准，一切与保险单及保险条款相违背的说明或解释均属无效；
+
+\n&#12288;&#12288;&#12288;&#12288;（4）  本人同意你公司通过电话、手机、电子邮箱适时提供保险信息服务；
+
+\n&#12288;&#12288;&#12288;&#12288;（5）  本人同意你公司为履行保险合同或向本人销售你公司的保险产品而使用本人信息；同时同意你公司将本人信息提供给被选择的善意第三方为本人提供客户服务、推荐产品或用于公益目的。你公司及被选择的善意第三方对本人信息负有保密义务；
+
+\n&#12288;&#12288;&#12288;&#12288;（6）  本人确认投保时填写的银行及账号是投保人本人的开户银行及账号。投保人保证账户有足够的金额支付应交保险费，如因当期账户存款余额不足造成转账不成功，导致保险合同不能成立，因此引起的责任概甶投保人承担。
+
+\n&#12288;&#12288;&#12288;&#12288;（7）  本人已知晓“中路财产保险股份有限公司”在山东地区、河北地区有分支机构，对于没有设立分支机构的地域，可能存在服务不到位，时效差的情况。
+
+\n11.其他未尽事宜详见保险条款。
+
+
+
+</string>
+</resources>

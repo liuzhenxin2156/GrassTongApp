@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="picker_view_bg_topbar">#F5F5F5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="color_3">#333333</color>
+    <color name="color_6">#666666</color>
+    <color name="color_9">#999999</color>
+    <color name="color_dc">#dcdcdc</color>
+    <color name="theme_body">#cc22292c</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="text_Grey">#c1c1c2</color>
+
+    <color name="C1">#01A95C</color>
+    <color name="C2">#B7B3F6D7</color>
+    <color name="C9">#f2f6f9</color>
+    <color name="C3">#00BFFF</color>
+    <color name="C4">#3B8BE1</color>
+    <color name="Record_1">#1CB195</color>
+    <color name="Record_2">#1B84C6</color>
+    <color name="Record_3">#22C5CA</color>
+    <color name="Record_4">#EC5365</color>
+    <color name="Record_5">#F4A549</color>
+    <color name="Record_6">#9833CC</color>
+    <color name="Record_7">#FF1495</color>
+    <color name="Record_8">#32CD33</color>
+    <color name="Record_9">#A52B2A</color>
+    <color name="Record_10">#6593EE</color>
+    <color name="Record_11">#028A8A</color>
+    <color name="Record_12">#DD163D</color>
+    <color name="Record_13">#463E8B</color>
+    <color name="Record_14">#FC8B00</color>
+    <color name="color_yellow">#FFC107</color>
+    <color name="color_light_blue">#00DDB6</color>
+    <color name="bottom_select_no1">#f7f7f7</color>
+
+    <color name="dividing_line">#F2F5EE</color>
+
+    <color name="diver_bg">#dfdfdf</color>
+    <color name="space_bg">#f2f6f9</color>
+    <color name="xml_bg">#F1F1F1</color>
+    <color name="selected_item_bg">#f5fafe</color>  <!-- 选中的item背景色 -->
+    <color name="assist_text">#aaaaaa</color> <!-- 辅助文字色 -->
+
+    <color name="cube_primary">#1CB195</color>   <!-- 主色 -->
+    <color name="diliver_gray">#d8d8d8</color>
+
+    <!-- 分割线 divider colors-->
+    <color name="primary_divider">#e6e6e6</color>
+    <color name="contact_divider">#f2f6f9</color>
+
+    <color name="C12">#fe6972</color>
+
+    <!-- 透明颜色 -->
+    <color name="transparent">#00000000</color>
+
+    <color name="skipButtonColor">#88C6C8CA</color>
+
+    <color name="bg_gray">#f2f2f2</color>
+
+
+</resources>

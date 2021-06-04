@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/toolbar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_48">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/view_space_4"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/view_space_10"
+            android:src="@drawable/back_iv" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_space_18"
+        android:layout_marginTop="@dimen/view_space_28"
+        android:text="请输入验证码"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_24"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_space_10"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_space_18"
+            android:text="短信已发送至手机："
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/phone_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="18888888888"
+            android:textColor="@color/C4"
+            android:textSize="@dimen/text_size_18" />
+    </LinearLayout>
+
+    <com.agridata.grasstong.wegiht.MyVerificationCodeView
+        android:id="@+id/write_code_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="26dp"
+        app:icv_et_bg_focus="@drawable/shape_icv_et_bg_focus"
+        app:icv_et_bg_normal="@drawable/shape_icv_et_bg_normal"
+        app:icv_et_divider_drawable="@drawable/shape_divider_identifying"
+        app:icv_et_number="6"
+        app:icv_et_pwd="false"
+        app:icv_et_pwd_radius="10dp"
+        app:icv_et_text_color="#000000"
+        app:icv_et_width="50dp" />
+
+    <TextView
+        android:id="@+id/code_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_36"
+        android:layout_marginTop="@dimen/view_space_52"
+        android:gravity="center"
+        android:textColor="@color/C4"
+        android:textSize="@dimen/text_size_14" />
+</LinearLayout>
