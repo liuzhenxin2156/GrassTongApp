@@ -29,7 +29,7 @@ import java.util.ArrayList;
  * @ProjectName : Test
  * @Author :
  * @Time : 2021/6/2 14:43
- * @Description :
+ * @Description :首页
  */
 public class HomeFragment extends BaseFragment  {
     private ImageView  home_bg_iv;
@@ -77,13 +77,13 @@ public class HomeFragment extends BaseFragment  {
             @Override
             public void onItemClick(View view, BaseRecyclerViewHolder viewHolder, int position) {
                 switch (position){
-                    case 0:
+                    case 0://会员服务
                         MemberServiceActivity.start(requireActivity());
                         break;
-                    case 1:
+                    case 1://生产交易
                         OutputTransactionActivity.start(requireActivity());
                         break;
-                    case 2:
+                    case 2://
                         FinanceServiceActivity.start(requireActivity());
                         break;
                     case 3://生产服务

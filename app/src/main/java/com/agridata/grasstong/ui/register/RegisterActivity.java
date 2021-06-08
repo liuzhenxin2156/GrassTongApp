@@ -23,6 +23,7 @@ import com.agridata.grasstong.data.UserInfo;
 import com.agridata.grasstong.data.city.JsonBean;
 import com.agridata.grasstong.sp.UserSp;
 import com.agridata.grasstong.ui.mian.MainActivity;
+import com.agridata.grasstong.ui.set.agreement.AgreementActivity;
 import com.agridata.grasstong.utils.AppManager;
 import com.agridata.grasstong.utils.EditTextHintUtil;
 import com.agridata.grasstong.utils.GetJsonDataUtil;
@@ -205,7 +206,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                 }
                 break;
             case R.id.service_agreement_tv:
-                //AgreementActivity.start(this, 2);//2 注册协议
+                AgreementActivity.start(this, 2);//2 注册协议
                 break;
             default:
         }

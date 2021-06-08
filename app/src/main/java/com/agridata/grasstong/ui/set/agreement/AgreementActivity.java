@@ -119,7 +119,7 @@ public class AgreementActivity extends BaseActivity {
         } else if (mType==1){
             webView.loadUrl("file:///android_asset/html/privacy.html");
         }else {
-            webView.loadUrl("file:///android_asset/html/text1.html");
+            webView.loadUrl("file:///android_asset/html/register_service.html");
         }
 
     }
