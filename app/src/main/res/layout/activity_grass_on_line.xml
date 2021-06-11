@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="种植企业牧草销售"
+            android:text="牧草线上交易"
             android:textColor="@color/color_3"
             android:textSize="@dimen/text_size_16" />
     </RelativeLayout>

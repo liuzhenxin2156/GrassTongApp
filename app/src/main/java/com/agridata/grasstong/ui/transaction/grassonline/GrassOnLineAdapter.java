@@ -1,4 +1,4 @@
-package com.agridata.grasstong.ui.transaction.sale;
+package com.agridata.grasstong.ui.transaction.grassonline;
 
 import android.content.Context;
 import android.widget.ImageView;
@@ -19,12 +19,12 @@ import java.util.List;
  * @Time : 2021/6/3 13:45
  * @Description :
  */
-public class GrassSaleAdapter extends BaseRecyclerViewAdapter<GrassBean, BaseRecyclerViewHolder> {
+public class GrassOnLineAdapter extends BaseRecyclerViewAdapter<GrassBean, BaseRecyclerViewHolder> {
     final  private List<GrassBean> mDates;
    final private Context mContext;
 
 
-    public GrassSaleAdapter(int layoutResId, List<GrassBean> dataList, Context context) {
+    public GrassOnLineAdapter(int layoutResId, List<GrassBean> dataList, Context context) {
         super(layoutResId, dataList);
         mDates = dataList;
         mContext = context;
@@ -37,13 +37,13 @@ public class GrassSaleAdapter extends BaseRecyclerViewAdapter<GrassBean, BaseRec
         title.setText(data.getTitle());
         switch (position) {
             case 0:
-                imageView.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.ic_sales_information));
+                imageView.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.ic_purchase_information));
                 break;
             case 1:
-                imageView.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.ic_sales_information_query));
+                imageView.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.ic_purchase_query));
                 break;
             case 2:
-                imageView.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.ic_sales_record));
+                imageView.setImageDrawable(ContextCompat.getDrawable(mContext,R.drawable.ic_purchase_record));
                 break;
 
             default:

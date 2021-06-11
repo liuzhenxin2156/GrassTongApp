@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/secondary_header_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_space_48"
+        android:background="@color/colorWhite"
+        android:text="jusjuadja"
+        android:textSize="@dimen/text_size_16"
+        android:gravity="left|center"
+        android:padding="12dp"
+        android:singleLine="true" />
+</LinearLayout>

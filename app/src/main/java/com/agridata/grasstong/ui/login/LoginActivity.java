@@ -46,7 +46,7 @@ public class LoginActivity extends BaseActivity {
     private Button login_btn;
     private TextView login_sms_verification_tv;
     private TextView forgot_password_tv;
-    private TextView go_register_tv;
+    private Button go_register_tv;
     private boolean mIsShowPwd = true;
     private String mAccount;
     private String mPassword;

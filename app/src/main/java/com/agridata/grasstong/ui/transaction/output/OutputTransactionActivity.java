@@ -12,11 +12,9 @@ import com.agridata.grasstong.R;
 import com.agridata.grasstong.base.BaseActivity;
 import com.agridata.grasstong.base.BasePresenter;
 import com.agridata.grasstong.data.GrassBean;
-import com.agridata.grasstong.ui.member.service.MemberServiceActivity;
-import com.agridata.grasstong.ui.transaction.purchase.GrassPurChaseActivity;
+import com.agridata.grasstong.ui.transaction.grassonline.GrassOnLineActivity;
 import com.agridata.grasstong.ui.transaction.query.TransactionQueryActivity;
-import com.agridata.grasstong.ui.transaction.sale.GrassSaleActivity;
-import com.agridata.grasstong.ui.transaction.sale.GrassSaleAdapter;
+import com.agridata.grasstong.ui.transaction.release.GrassInformationReleaseActivity;
 import com.agridata.grasstong.utils.recyclerview.BaseRecyclerViewAdapter;
 import com.agridata.grasstong.utils.recyclerview.BaseRecyclerViewHolder;
 
@@ -71,10 +69,10 @@ public class OutputTransactionActivity extends BaseActivity {
             public void onItemClick(View view, BaseRecyclerViewHolder viewHolder, int position) {
                 switch (position){
                     case 0:
-                        GrassSaleActivity.start(OutputTransactionActivity.this);
+                        GrassInformationReleaseActivity.start(OutputTransactionActivity.this);
                         break;
                     case 1:
-                        GrassPurChaseActivity.start(OutputTransactionActivity.this);
+                        GrassOnLineActivity.start(OutputTransactionActivity.this);
                         break;
                     case 2:
                         TransactionQueryActivity.start(OutputTransactionActivity.this);
@@ -105,7 +103,7 @@ public class OutputTransactionActivity extends BaseActivity {
 
     private void addData(){
         mGrassBeanList = new ArrayList<>();
-        String [] strings = {"种植企业牧草销售","需求企业牧草采购","销售记录"};
+        String [] strings = {"信息发布","牧草线上交易","生资服务"};
         for (String string : strings) {
             GrassBean grassBean = new GrassBean();
             grassBean.setTitle(string);

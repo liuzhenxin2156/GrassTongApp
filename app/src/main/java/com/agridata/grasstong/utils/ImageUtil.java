@@ -19,6 +19,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.agridata.grasstong.ui.member.upload.UploadCorporateImageActivity;
 import com.orhanobut.logger.Logger;
 
 import java.io.BufferedOutputStream;
@@ -853,7 +854,28 @@ public class ImageUtil {
     }
 
 
-
+    public static String photo(Context context,String imageName, ImageView imageView) {
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        // 该属性设置为true只会加载图片的边框进来，并不会加载图片具体的像素点
+        options.inJustDecodeBounds = true;
+        String localPath = imageName;
+        BitmapFactory.decodeFile(localPath, options);
+        int oldHeight = options.outHeight;
+        int oldWidth = options.outWidth;
+        int sampleSize = 1;//默认缩放为1
+        //图片实际的宽与高，根据默认最大大小值，得到图片实际的缩放比例
+        while ((oldHeight / sampleSize > 854) || (oldWidth / sampleSize > 480)) {
+            sampleSize *= 2;
+        }
+        options.inSampleSize = sampleSize;
+        options.inPreferredConfig = Bitmap.Config.RGB_565;
+        options.inJustDecodeBounds = false;
+        // 压缩后的bitmap
+        Bitmap bitmap = BitmapFactory.decodeFile(localPath, options);
+        imageView.setImageBitmap(bitmap);
+        String newPath = AppUtil.createAppStorageDir(AppUtil.PATH_APP_IMAGE, context) + "/" + System.currentTimeMillis() + ".jpeg";
+        return ImageUtil.compressBitmapToFile(bitmap, newPath);
+    }
 
 
     /**

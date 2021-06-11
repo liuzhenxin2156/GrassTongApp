@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/toolbar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height_48">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/view_space_4"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/view_space_10"
+            android:src="@drawable/back_iv" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="会员形象展示"
+            android:textColor="@color/color_3"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/upload_corporate_image_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/view_space_12"
+            android:text="企业形象上传"
+            android:textColor="@color/C4"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/line_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_size_0.5"
+        android:layout_below="@+id/toolbar_ll"
+        android:background="@color/diver_bg" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_space_2"
+        android:layout_below="@+id/line_rl"
+        android:progressDrawable="@drawable/webview_pro_bg"
+        android:visibility="gone"
+
+        />
+    <WebView
+        android:id="@+id/webView"
+        android:layout_below="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</LinearLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">牧草通</string>
+    <string name="app_name">山西饲草交易平台</string>
     <string name="register">注册</string>
     <string name="user_name">姓名</string>
     <string name="id_card_num">身份证号码</string>
@@ -80,7 +80,7 @@
     <string name="logout">确定要注销账号吗？
     永久注销，无法登录!
      所有数据将无法找回！</string>
-    <string name="notice_content">所有发给用户的通告只会通过猪哥亮客户端的公告栏公告发布。服务条款的修改、服务变更、或其它重要事件的通告都会以此形式进行。</string>
+    <string name="notice_content">所有发给用户的通告只会通过牧草通客户端的公告栏公告发布。服务条款的修改、服务变更、或其它重要事件的通告都会以此形式进行。</string>
 
     <string name="user_agreement">用户协议</string>
     <string name="privacy_policy">隐私政策</string>

@@ -12,8 +12,9 @@ import com.agridata.grasstong.R;
 import com.agridata.grasstong.base.BaseActivity;
 import com.agridata.grasstong.base.BasePresenter;
 import com.agridata.grasstong.data.GrassBean;
-import com.agridata.grasstong.ui.member.manage.MemberManageActivity;
-import com.agridata.grasstong.utils.ToastUtil;
+import com.agridata.grasstong.ui.member.imagedisplay.MemberImageDisplayActivity;
+import com.agridata.grasstong.ui.member.record.MemberRecordActivity;
+import com.agridata.grasstong.ui.member.registration.UserRegistrationActivity;
 import com.agridata.grasstong.utils.recyclerview.BaseRecyclerViewAdapter;
 import com.agridata.grasstong.utils.recyclerview.BaseRecyclerViewHolder;
 
@@ -68,11 +69,13 @@ public class MemberServiceActivity extends BaseActivity {
             public void onItemClick(View view, BaseRecyclerViewHolder viewHolder, int position) {
                 switch (position){
                     case 0:
+                        UserRegistrationActivity.start(MemberServiceActivity.this);
                         break;
                     case 1:
+                        MemberRecordActivity.start(MemberServiceActivity.this);
                         break;
                     case 2:
-                        MemberManageActivity.start(MemberServiceActivity.this);
+                        MemberImageDisplayActivity.start(MemberServiceActivity.this);
                         break;
                     default:
                         break;
@@ -108,7 +111,7 @@ public class MemberServiceActivity extends BaseActivity {
 
     private void addData(){
         mGrassBeanList = new ArrayList<>();
-        String [] strings = {"会员注册","会员备案","会员管理"};
+        String [] strings = {"用户注册","会员备案","会员形象展示"};
         for (String string : strings) {
             GrassBean grassBean = new GrassBean();
             grassBean.setTitle(string);

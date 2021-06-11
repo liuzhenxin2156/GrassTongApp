@@ -1,4 +1,4 @@
-package com.agridata.grasstong.ui.finance.service;
+package com.agridata.grasstong.ui.transaction.release;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,8 +12,8 @@ import com.agridata.grasstong.R;
 import com.agridata.grasstong.base.BaseActivity;
 import com.agridata.grasstong.base.BasePresenter;
 import com.agridata.grasstong.data.GrassBean;
-import com.agridata.grasstong.ui.finance.insurance.InsuranceServiceActivity;
-import com.agridata.grasstong.ui.finance.loan.LoanServiceActivity;
+import com.agridata.grasstong.ui.transaction.release.makeorder.MakeOrderActivity;
+import com.agridata.grasstong.ui.transaction.release.spot.SpotActivity;
 import com.agridata.grasstong.utils.recyclerview.BaseRecyclerViewAdapter;
 import com.agridata.grasstong.utils.recyclerview.BaseRecyclerViewHolder;
 
@@ -25,14 +25,13 @@ import java.util.ArrayList;
  * @Time : 2021/6/3 15:49
  * @Description :
  */
-public class FinanceServiceActivity extends BaseActivity {
+public class GrassInformationReleaseActivity extends BaseActivity {
 
     private RecyclerView mRecyclerView;
 
-    private FinanceServiceAdapter financeServiceAdapter;
+    private GrassInformationReleaseAdapter grassInformationReleaseAdapter;
     private ArrayList<GrassBean> mGrassBeanList;
     private ImageView mBackIv;
-
 
 
     /**
@@ -41,40 +40,39 @@ public class FinanceServiceActivity extends BaseActivity {
      * @param context
      */
     public static void start(Context context) {
-        Intent intent = new Intent(context, FinanceServiceActivity.class);
+        Intent intent = new Intent(context, GrassInformationReleaseActivity.class);
         context.startActivity(intent);
     }
 
     @Override
     protected int getContentViewId() {
-        return R.layout.activity_finance_service;
+        return R.layout.activity_grass_information_release;
     }
 
     @Override
     protected void initViews() {
         addData();
-        mRecyclerView =findViewById(R.id.recycler_view);
+        mRecyclerView = findViewById(R.id.recycler_view);
         mBackIv = findViewById(R.id.back_iv);
-        GridLayoutManager layoutManager = new GridLayoutManager(this,3);
+        GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
         mRecyclerView.setLayoutManager(layoutManager);
-        financeServiceAdapter = new FinanceServiceAdapter(R.layout.item_default_rimless, mGrassBeanList,this);
-        mRecyclerView.setAdapter(financeServiceAdapter);
-        financeServiceAdapter.refreshDataList(mGrassBeanList);
+        grassInformationReleaseAdapter = new GrassInformationReleaseAdapter(R.layout.item_default_rimless, mGrassBeanList, this);
+        mRecyclerView.setAdapter(grassInformationReleaseAdapter);
+        grassInformationReleaseAdapter.refreshDataList(mGrassBeanList);
 
         mBackIv.setOnClickListener(v -> finish());
-        financeServiceAdapter.setOnItemClickListener(new BaseRecyclerViewAdapter.OnItemClickListener() {
+
+        grassInformationReleaseAdapter.setOnItemClickListener(new BaseRecyclerViewAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, BaseRecyclerViewHolder viewHolder, int position) {
-                switch (position){
+                switch (position) {
                     case 0:
-                        LoanServiceActivity.start(FinanceServiceActivity.this);
+                        SpotActivity.start(GrassInformationReleaseActivity.this);
                         break;
                     case 1:
-                        InsuranceServiceActivity.start(FinanceServiceActivity.this);
+                        MakeOrderActivity.start(GrassInformationReleaseActivity.this);
                         break;
-
                     default:
-                        break;
                 }
             }
 
@@ -83,7 +81,6 @@ public class FinanceServiceActivity extends BaseActivity {
                 return false;
             }
         });
-
     }
 
 
@@ -97,9 +94,9 @@ public class FinanceServiceActivity extends BaseActivity {
         return null;
     }
 
-    private void addData(){
+    private void addData() {
         mGrassBeanList = new ArrayList<>();
-        String [] strings = {"贷款服务","保险服务"};
+        String[] strings = {"现货", "订单式生产"};
         for (String string : strings) {
             GrassBean grassBean = new GrassBean();
             grassBean.setTitle(string);

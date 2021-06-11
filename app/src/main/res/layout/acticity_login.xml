@@ -24,7 +24,7 @@
             android:src="@drawable/back_iv" />
 
         <TextView
-            android:id="@+id/go_register_tv"
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
@@ -183,6 +183,19 @@
             android:textColor="@color/colorWhite"
             android:textSize="@dimen/text_size_16" />
 
+        <Button
+            android:id="@+id/go_register_tv"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_height_44"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/view_space_22"
+            android:layout_marginRight="@dimen/view_space_22"
+            android:background="@drawable/selector_register_btn"
+            android:text="注册"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16" />
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

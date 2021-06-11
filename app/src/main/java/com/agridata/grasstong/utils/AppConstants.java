@@ -81,8 +81,8 @@ public class AppConstants {
 
     public interface TYPE {
         String[] stringsType = {"规模厂", "散养户", "贩运户", "无害化处理厂", "屠宰场", "其他"};
-        String[] stringsPerorUnit = {"个人", "单位"};
-        String[] stringsCarCarrying = {"大于4.5吨", "小于4.5吨（含）"};
+        String[] stringsBusinessCategory = {"生产企业", "经营企业","养殖企业","农机","农资"};
+        String[] stringsPersonal = {"养殖户", "种草","农资经营"};
         String[] stringsCarLicenseColor = {"蓝", "黄", "小黄牌", "农用车", "三轮车", "新能源", "未知"};
         String[] stringsCarAddress = {"县内", "省内", "跨省"};
         String[] stringsTypeOfTransportation = {"生猪运输", "牛羊运输", "禽类运输", "产品运输"};
@@ -90,6 +90,8 @@ public class AppConstants {
         String[] city = {"东城区", "西城区", "朝阳区", "丰台区", "石景山区", "海淀区", "门头沟区", "房山区", "通州区"};
         String[] Report = {"存栏数", "出栏数", "屠宰量", "母猪存栏量", "在途运输数量", "一月龄存栏数", "二月龄存栏数", "三月龄存栏数", "四月龄存栏数",
         "五月龄存栏数","六月龄存栏数"};
+        String[] stringProductName = {"紫花苜蓿","沙打旺","串叶松香草","苏丹草"};
+        String[] stringNumType = {"吨","立方"};
     }
 
 

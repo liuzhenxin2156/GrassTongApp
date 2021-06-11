@@ -277,13 +277,10 @@ public class MineFragment extends BaseFragment {
         TextView confirmTv =  view.findViewById(R.id.positive_tv);//确定按钮
         TextView contentTv =  view.findViewById(R.id.content_tv);
         contentTv.setText(R.string.notice_content);
-        confirmTv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirstSpUtils.getInstance().setNoticeShow(true);
-                BulletinActivity.start(getActivity());
-                exitDialog.dismiss();
-            }
+        confirmTv.setOnClickListener(view1 -> {
+            FirstSpUtils.getInstance().setNoticeShow(true);
+            BulletinActivity.start(getActivity());
+            exitDialog.dismiss();
         });
         exitDialog.show();
         WindowManager.LayoutParams params = exitDialog.getWindow().getAttributes();

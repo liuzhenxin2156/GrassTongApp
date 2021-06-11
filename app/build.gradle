@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.agridata.grasstong"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -64,8 +64,8 @@ dependencies {
 
 
     //图片加载
-    api 'com.github.bumptech.glide:glide:4.11.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    api 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
 
 
 //    //加载中动画
@@ -77,5 +77,11 @@ dependencies {
     implementation 'com.soundcloud.android.crop:lib_crop:1.0.0'
 //
 //    implementation 'com.blankj:utilcode:1.23.2'
+    //图片查看
+    api('io.github.lucksiege:pictureselector:v2.7.3-rc02') {
+        exclude group: 'com.github.bumptech.glide'
+    }
 
+    //双列表联动
+    implementation 'com.kunminx.linkage:linkage-recyclerview:1.9.2'
 }

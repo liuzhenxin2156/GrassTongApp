@@ -46,7 +46,7 @@
 
     <application
         android:name="com.agridata.grasstong.base.MyApplication"
-        android:allowBackup="false"
+        android:allowBackup="true"
         android:icon="@mipmap/app_logo"
         android:requestLegacyExternalStorage="true"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -58,7 +58,8 @@
         android:theme="@style/BaseAppTheme"
         android:maxAspectRatio="2.4"
         tools:replace="android:theme"
-        tools:targetApi="n"
+        tools:targetApi="q"
+
         >
         <meta-data
             android:name="android.max_aspect"
@@ -130,18 +131,15 @@
         <!-- 会员服务  -->
         <activity android:name=".ui.member.service.MemberServiceActivity"/>
 
-        <!-- 会员管理  -->
-        <activity android:name=".ui.member.manage.MemberManageActivity"/>
-
         <!-- 生产管理  -->
         <activity android:name=".ui.transaction.output.OutputTransactionActivity"/>
 
-        <!-- 种植企业牧草销售  -->
-        <activity android:name=".ui.transaction.sale.GrassSaleActivity"/>
+        <!-- 信息发布  -->
+        <activity android:name=".ui.transaction.release.GrassInformationReleaseActivity"/>
 
 
-        <!-- 需求企业牧草采购  -->
-        <activity android:name=".ui.transaction.purchase.GrassPurChaseActivity"/>
+        <!-- 牧草线上交易  -->
+        <activity android:name=".ui.transaction.grassonline.GrassOnLineActivity"/>
 
         <!-- 生产交易查询  -->
         <activity android:name=".ui.transaction.query.TransactionQueryActivity"/>
@@ -160,6 +158,48 @@
 
         <!-- 生产服务  -->
         <activity android:name=".ui.production.ProductionServiceActivity"/>
+
+
+        <!-- 2021 6 -9 -->
+        <!-- 会员注册  -->
+        <activity android:name=".ui.member.registration.UserRegistrationActivity"/>
+
+        <!-- 会员备案  -->
+        <activity android:name=".ui.member.record.MemberRecordActivity"/>
+
+        <!-- 会员形象展示  -->
+        <activity android:name=".ui.member.imagedisplay.MemberImageDisplayActivity"/>
+
+        <!-- 会员形象上传  -->
+        <activity android:name=".ui.member.upload.UploadCorporateImageActivity"/>
+
+        <!-- 现货  -->
+        <activity android:name=".ui.transaction.release.spot.SpotActivity"/>
+
+        <!-- 我要卖货  -->
+        <activity android:name=".ui.transaction.release.sell.WantSellActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+
+        <!-- 我要买货  -->
+        <activity android:name=".ui.transaction.release.buy.WantBuyActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+
+        <!-- 远期订单  -->
+        <activity android:name=".ui.transaction.release.makeorder.MakeOrderActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+
+        <!-- 远期订单买  -->
+        <activity android:name=".ui.transaction.release.forwardbuy.ForwardBuyActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
+
+        <!-- 远期订单卖 -->
+        <activity android:name=".ui.transaction.release.forwardsell.ForwardSellActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
     </application>
 
 </manifest>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iv_grass_item"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:id="@+id/iv_grass_img"
+        android:layout_width="@dimen/view_height_66"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:layout_height="@dimen/view_height_66"
+        android:layout_margin="10dp"
+        android:src="@drawable/grass_iv"
+        />
+    <TextView
+        android:id="@+id/grass_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        tools:text="梯牧草" />
+
+    <TextView
+        android:id="@+id/grass_company_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京宝讯科技有限公司"
+        android:layout_gravity="center"
+        android:textColor="@color/assist_text"
+        android:textSize="10sp"
+         />
+
+    <TextView
+        android:layout_marginBottom="@dimen/view_space_8"
+        android:id="@+id/grass_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:text="500吨"
+        android:textColor="@color/colorRed"
+        android:textSize="17sp"
+        android:textStyle="bold"
+       />
+
+
+</LinearLayout>
